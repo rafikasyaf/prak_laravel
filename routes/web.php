@@ -40,3 +40,7 @@ Route::get('coba2', function () {
 return view('coba2');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
