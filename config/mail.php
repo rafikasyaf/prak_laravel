@@ -17,7 +17,22 @@ return [
     */
 
     'driver' => env('MAIL_DRIVER', 'smtp'),
-
+	'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+	'port' => env('MAIL_PORT', 587),
+	'from' => [
+	'address' => env('MAIL_FROM_ADDRESS', 'nandandaffa@gmail.com'),
+	'name' => env('MAIL_FROM_NAME', 'user'),
+	],
+	'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+	'username' => env('MAIL_USERNAME','nandanadaffa@gmail.com'),
+	'password' => env('MAIL_PASSWORD','12345678'),
+	'sendmail' => '/usr/sbin/sendmail -bs',
+	'markdown' => [
+	'theme' => 'default',
+	'paths' => [
+	resource_path('views/vendor/mail'),
+	],
+	],
     /*
     |--------------------------------------------------------------------------
     | SMTP Host Address
