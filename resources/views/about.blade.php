@@ -83,9 +83,8 @@
                 </div>
 
                 <div>
-                    <p>Pesansss</p>
+                    <p>Halaman web ini buatan saya untuk mata kuliah KL Pemrograman Web Lanjut</p><br/>
                     <a href="/">Home</a>
-                  
                 </div>
             </div>
         </div>
